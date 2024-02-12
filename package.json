@@ -1,0 +1,47 @@
+{
+  "name": "c3s-apps-ui",
+  "version": "1.0.0",
+  "description": "UI components for developing Copernicus web applications",
+  "main": "dist/cjs/index.js",
+  "module": "dist/esm/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "rollup -c --bundleConfigAsCjs",
+    "storybook": "storybook dev -p 6006",
+    "build-storybook": "storybook build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/ecmwf-projects/cads-ui-library.git"
+  },
+  "author": "",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/ecmwf-projects/cads-ui-library/issues"
+  },
+  "homepage": "https://github.com/ecmwf-projects/cads-ui-library#readme",
+  "devDependencies": {
+    "@rollup/plugin-commonjs": "^25.0.7",
+    "@rollup/plugin-node-resolve": "^15.2.3",
+    "@rollup/plugin-typescript": "^11.1.6",
+    "@storybook/addon-actions": "^7.6.12",
+    "@storybook/addon-controls": "^7.6.12",
+    "@storybook/addon-links": "^7.6.12",
+    "@storybook/nextjs": "^7.6.12",
+    "@storybook/react": "^7.6.12",
+    "@types/react": "^18.2.53",
+    "next": "^14.1.0",
+    "react": "^18.2.0",
+    "rollup": "^4.9.6",
+    "rollup-plugin-dts": "^6.1.0",
+    "rollup-plugin-minification": "^0.2.0",
+    "rollup-plugin-peer-deps-external": "^2.2.4",
+    "storybook": "^7.6.12",
+    "typescript": "^5.3.3"
+  },
+  "dependencies": {
+    "@emotion/react": "^11.11.3",
+    "@emotion/styled": "^11.11.0",
+    "@mui/material": "^5.15.10"
+  }
+}
